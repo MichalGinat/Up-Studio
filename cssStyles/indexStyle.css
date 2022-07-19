@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: aktiv-grotesk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(211, 202, 202);
+    background-color: #fff;
+    text-align: center;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+h3 {
+    color: white;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", serif;
+    text-underline-position: above;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+.content-section {
+    min-height: 17vh;
+    padding-bottom: 20px;
+}
+
+.content-section h1 {
+    color: #110e0e;
+    font-weight: 400;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.content-section h1:after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #dfdfdf;
+    padding-top: 3px;
+}
+
+.content-section p.lead {
+    font-family: "Cardo", serif;
+    font-size: 19px;
+    line-height: 1.35em;
+    margin-bottom: 25px;
+}
+
+.content-section p.lead em {
+    font-size: 14px;
+}
+
+.content-section p em {
+    font-size: 14px;
+}
+
+.content-section p mark em {
+    font-size: inherit;
+}
+
+.content-section img.pull-right {
+    border: 1px solid #dfdfdf;
+    margin-top: 140px;
+}
+
+#home {
+    background: url("https://s17.postimg.org/m4bfqfgn3/fog_1005445_1920.jpg") no-repeat center center fixed;
+    background-size: cover;
+    text-shadow: 1px 1px 0 rgba(12, 12, 12, 0.5);
+    text-align: center;
+}
+
+#home h1 {
+    font-family: "Advent Pro", sans-serif;
+    font-size: 96px;
+    color: rgb(243, 236, 236);
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 90px;
+}
+
+#home h1:after {
+    border-bottom: 1px solid rgb(7, 6, 6);
+}
+
+#home h5 {
+    font-size: 30px;
+    color: rgba(238, 234, 234, 0.836);
+}
+
+@media screen and (min-width: 768px) {
+    #home h1 {
+        line-height: 114px;
+    }
+    #home h5 {
+        font-size: 19px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #home h1 {
+        margin-top: 70px;
+    }
+    #home h5 {
+        font-size: 21px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #home h1 {
+        line-height: 124px;
+    }
+    #home h5 {
+        font-size: 35px;
+    }
+}
+
+.elementor-icon-list-text {
+    color: #fff;
+    text-decoration-line: underline;
+    position: relative;
+}
+
+h2 {
+    color: #dfdfdf;
+}
+
+#main_sentence,
+#main_sentence2 {
+    font-size: xx-large;
+}

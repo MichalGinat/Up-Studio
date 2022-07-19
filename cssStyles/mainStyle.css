@@ -1,0 +1,158 @@
+body {
+    margin: 0px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(/images/mainBackgroundImage.jpg);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.float {
+    width: 60px;
+    height: 60px;
+    margin: 0 15px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    direction: rtl;
+    float: left;
+}
+
+.whatsApp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    left: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    margin-left: 81px;
+}
+
+.my-whatsApp {
+    margin-top: 16px;
+}
+
+.facebook {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    left: 40px;
+    margin: 0 15px 0 0;
+    background-color: Highlight;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-facebook {
+    margin-top: 16px;
+}
+
+.container th h1 {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    color: #185875;
+}
+
+.container td {
+    font-weight: normal;
+    font-size: 1em;
+    -webkit-box-shadow: 0 2px 2px -2px #0e1119;
+    -moz-box-shadow: 0 2px 2px -2px #0e1119;
+    box-shadow: 0 2px 2px -2px #0e1119;
+}
+
+.container {
+    text-align: left;
+    overflow: hidden;
+    width: 60%;
+    margin: 0 auto;
+    display: table;
+    padding: 0 0 8em 0;
+}
+
+.container td,
+.container th {
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left: 2%;
+    text-align: center;
+    font-size: 150%;
+}
+
+
+/* Background-color of the odd rows */
+
+.container tr:nth-child(odd) {
+    background-color: #323c50;
+}
+
+
+/* Background-color of the even rows */
+
+.container tr:nth-child(even) {
+    background-color: #2c3446;
+}
+
+.container th {
+    background-color: #1f2739;
+}
+
+.container td:first-child {
+    color: #dfdfdf;
+}
+
+.container tr:hover {
+    background-color: #464a52;
+    -webkit-box-shadow: 0 6px 6px -6px #0e1119;
+    -moz-box-shadow: 0 6px 6px -6px #0e1119;
+    box-shadow: 0 6px 6px -6px #0e1119;
+}
+
+.container td:hover {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e6e5e4;
+    color: #403e10;
+    font-weight: bold;
+    box-shadow: #4d4d3f -1px 1px, #4d4d3f -2px 2px, #4d4d3f -3px 3px, #4d4d3f -4px 4px, #4d4d3f -5px 5px, #4d4d3f -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+}
+
+@media (max-width: 800px) {
+    .container td:nth-child(4),
+    .container th:nth-child(4) {
+        display: none;
+    }
+}
+
+#userDetails {
+    text-align: right;
+    font-size: xx-large;
+    background-color: #1b1b1b;
+    width: fit-content;
+}
+
+#whenSignedIn {
+    visibility: hidden;
+}

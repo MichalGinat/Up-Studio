@@ -1,0 +1,449 @@
+[debug] [2022-02-07T10:23:03.637Z] ----------------------------------------------------------------------
+[debug] [2022-02-07T10:23:03.639Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-02-07T10:23:03.639Z] CLI Version:   10.1.4
+[debug] [2022-02-07T10:23:03.639Z] Platform:      win32
+[debug] [2022-02-07T10:23:03.639Z] Node Version:  v16.13.2
+[debug] [2022-02-07T10:23:03.640Z] Time:          Mon Feb 07 2022 12:23:03 GMT+0200 (Israel Standard Time)
+[debug] [2022-02-07T10:23:03.640Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-07T10:23:03.720Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-07T10:23:03.720Z] > authorizing via signed-in user (yuvalzohar36@gmail.com)
+[info] i  emulators: Starting emulators: functions, firestore, database, hosting, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore, database, hosting, storage"}}
+[warn] !  hub: emulator hub unable to start on port 4400, starting on 4401 instead. {"metadata":{"emulator":{"name":"hub"},"message":"emulator hub unable to start on port 4400, starting on 4401 instead."}}
+[debug] [2022-02-07T10:23:03.770Z] [hub] writing locator at C:\Users\yuval\AppData\Local\Temp\hub-studioup-d4e79.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, pubsub\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-02-07T10:23:03.786Z] defaultcredentials: writing to file C:\Users\yuval\AppData\Roaming\firebase\yuvalzohar36_gmail_com_application_default_credentials.json
+[debug] [2022-02-07T10:23:03.788Z] Setting GAC to C:\Users\yuval\AppData\Roaming\firebase\yuvalzohar36_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\yuval\\AppData\\Roaming\\firebase\\yuvalzohar36_gmail_com_application_default_credentials.json"}}
+[debug] [2022-02-07T10:23:03.792Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79/adminSdkConfig [none]
+[debug] [2022-02-07T10:23:04.221Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79/adminSdkConfig 200
+[debug] [2022-02-07T10:23:04.222Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79/adminSdkConfig {"projectId":"studioup-d4e79","databaseURL":"https://studioup-d4e79-default-rtdb.firebaseio.com","storageBucket":"studioup-d4e79.appspot.com","locationId":"us-central"}
+[debug] [2022-02-07T10:23:04.238Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-02-07T10:23:04.238Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-02-07T10:23:04.238Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\yuval\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.13.1.jar","--host","localhost","--port",8080,"--rules","C:\\Users\\yuval\\Desktop\\architecture\\firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\yuval\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.13.1.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--rules\",\"C:\\\\Users\\\\yuval\\\\Desktop\\\\architecture\\\\firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-02-07T10:23:05.565Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 [none]
+[debug] [2022-02-07T10:23:05.932Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 200
+[debug] [2022-02-07T10:23:05.932Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 {"projectId":"studioup-d4e79","projectNumber":"916759180544","displayName":"StudioUp","name":"projects/studioup-d4e79","resources":{"hostingSite":"studioup-d4e79","realtimeDatabaseInstance":"studioup-d4e79-default-rtdb","storageBucket":"studioup-d4e79.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[debug] [2022-02-07T10:23:05.933Z] database rules config:  [{"instance":"studioup-d4e79-default-rtdb","rules":"C:\\Users\\yuval\\Desktop\\architecture\\database.rules.json"}]
+[debug] [2022-02-07T10:23:05.939Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-02-07T10:23:05.939Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-02-07T10:23:05.939Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2022-02-07T10:23:05.940Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\yuval\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.7.3.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\yuval\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.7.3.jar\",\"--host\",\"localhost\",\"--port\",9000,\"--functions_emulator_host\",\"localhost\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2022-02-07T10:23:07.527Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-02-07T10:23:07.740Z] Temp file directory for storage emulator: C:\Users\yuval\AppData\Local\Temp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: C:\\Users\\yuval\\AppData\\Local\\Temp/firebase/storage/blobs"}}
+[debug] [2022-02-07T10:23:08.339Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studioup-d4e79/sites 
+[debug] [2022-02-07T10:23:09.382Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studioup-d4e79/sites 200
+[debug] [2022-02-07T10:23:09.382Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studioup-d4e79/sites {"sites":[{"name":"projects/916759180544/sites/studioup-d4e79","defaultUrl":"https://studioup-d4e79.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-02-07T10:23:09.382Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79/webApps/-/config [none]
+[debug] [2022-02-07T10:23:10.257Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79/webApps/-/config 200
+[debug] [2022-02-07T10:23:10.257Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79/webApps/-/config {"projectId":"studioup-d4e79","appId":"1:916759180544:web:312e321e0ca21bdd4e2fe5","databaseURL":"https://studioup-d4e79-default-rtdb.firebaseio.com","storageBucket":"studioup-d4e79.appspot.com","locationId":"us-central","apiKey":"AIzaSyA01OSRHevnV7n7rA2FDsRAkBemZsRsvrQ","authDomain":"studioup-d4e79.firebaseapp.com","messagingSenderId":"916759180544","measurementId":"G-Y3SKQDG2TM"}
+[info] i  hosting: Serving hosting files from: ../architecture {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m../architecture\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-02-07T10:23:10.295Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-02-07T10:23:10.295Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-02-07T10:23:10.295Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\yuval\\.cache\\firebase\\emulators\\ui-v1.6.4\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\yuval\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.6.4\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-02-07T10:23:10.424Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\yuval\Desktop\architecture\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\yuval\\Desktop\\architecture\\functions\" for Cloud Functions..."}}
+[debug] [2022-02-07T10:23:10.581Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2022-02-07T10:23:10.581Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2022-02-07T10:23:10.582Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2022-02-07T10:23:10.582Z] [worker-~diagnostic~-8bc78b83-b0f1-46d8-83e4-34fa0baaca55]: Assigning socketPath: \\?\pipe\C:\Users\yuval\Desktop\architecture\functions\5580 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-8bc78b83-b0f1-46d8-83e4-34fa0baaca55]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\yuval\\Desktop\\architecture\\functions\\5580"}}
+[debug] [2022-02-07T10:23:10.582Z] [worker-~diagnostic~-8bc78b83-b0f1-46d8-83e4-34fa0baaca55]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-8bc78b83-b0f1-46d8-83e4-34fa0baaca55]: BUSY"}}
+[debug] [2022-02-07T10:23:10.757Z] [runtime-status] [5580] Functions runtime initialized. {"cwd":"C:\\Users\\yuval\\Desktop\\architecture\\functions","node_version":"16.13.2"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [5580] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\yuval\\\\Desktop\\\\architecture\\\\functions\",\"node_version\":\"16.13.2\"}"}}
+[debug] [2022-02-07T10:23:10.757Z] [runtime-status] [5580] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [5580] Disabled runtime features: undefined"}}
+[debug] [2022-02-07T10:23:10.760Z] [runtime-status] [5580] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Users\\yuval\\Desktop\\architecture\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [5580] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"C:\\\\Users\\\\yuval\\\\Desktop\\\\architecture\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-02-07T10:23:10.762Z] [runtime-status] [5580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.17.1","resolution":"C:\\Users\\yuval\\Desktop\\architecture\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [5580] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.17.1\",\"resolution\":\"C:\\\\Users\\\\yuval\\\\Desktop\\\\architecture\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-02-07T10:23:10.764Z] [runtime-status] [5580] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [5580] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-02-07T10:23:10.765Z] [runtime-status] [5580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.17.1","resolution":"C:\\Users\\yuval\\Desktop\\architecture\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [5580] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.17.1\",\"resolution\":\"C:\\\\Users\\\\yuval\\\\Desktop\\\\architecture\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-02-07T10:23:10.878Z] [runtime-status] [5580] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [5580] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-02-07T10:23:10.879Z] [runtime-status] [5580] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.17.1","resolution":"C:\\Users\\yuval\\Desktop\\architecture\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [5580] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.17.1\",\"resolution\":\"C:\\\\Users\\\\yuval\\\\Desktop\\\\architecture\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-02-07T10:23:10.881Z] [runtime-status] [5580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.17.1","resolution":"C:\\Users\\yuval\\Desktop\\architecture\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [5580] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.17.1\",\"resolution\":\"C:\\\\Users\\\\yuval\\\\Desktop\\\\architecture\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-02-07T10:23:10.885Z] [runtime-status] [5580] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Users\\yuval\\Desktop\\architecture\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [5580] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"C:\\\\Users\\\\yuval\\\\Desktop\\\\architecture\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-02-07T10:23:10.887Z] [runtime-status] [5580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.17.1","resolution":"C:\\Users\\yuval\\Desktop\\architecture\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [5580] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.17.1\",\"resolution\":\"C:\\\\Users\\\\yuval\\\\Desktop\\\\architecture\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-02-07T10:23:10.889Z] [runtime-status] [5580] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Users\\yuval\\Desktop\\architecture\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [5580] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"C:\\\\Users\\\\yuval\\\\Desktop\\\\architecture\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-02-07T10:23:10.893Z] >>> HTTP REQUEST PUT http://localhost:9000/.settings/rules.json?ns=studioup-d4e79-default-rtdb  
+ {
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+
+[debug] [2022-02-07T10:23:10.907Z] [worker-~diagnostic~-8bc78b83-b0f1-46d8-83e4-34fa0baaca55]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-8bc78b83-b0f1-46d8-83e4-34fa0baaca55]: IDLE"}}
+[debug] [2022-02-07T10:23:11.379Z] <<< HTTP RESPONSE 200 {"content-length":"15","content-type":"application/json; charset=utf-8","access-control-allow-origin":"*","cache-control":"no-cache","x-firebase-project-id":"studioup-d4e79-default-rtdb","x-firebase-project-number":"123456789","x-firebase-uuid":"75704f25-4cbf-45b1-8d55-174116cedd9a"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Firestore │ localhost:8080 │ http://localhost:4000/firestore │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Database  │ localhost:9000 │ http://localhost:4000/database  │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ localhost:5000 │ n/a                             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Storage   │ localhost:9199 │ http://localhost:4000/storage   │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4401
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:23:12 +0000] "GET / HTTP/1.1" 200 5098 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:23:12 +0000] \"GET / HTTP/1.1\" 200 5098 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:23:12 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:23:12 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:25:24 +0000] "GET / HTTP/1.1" 200 5098 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:25:24 +0000] \"GET / HTTP/1.1\" 200 5098 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:25:24 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:25:24 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:25:36 +0000] "GET / HTTP/1.1" 200 5098 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:25:36 +0000] \"GET / HTTP/1.1\" 200 5098 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:25:36 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:25:36 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:25:37 +0000] "GET / HTTP/1.1" 200 5098 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:25:37 +0000] \"GET / HTTP/1.1\" 200 5098 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:25:37 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:25:37 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:28:17 +0000] "GET / HTTP/1.1" 200 5250 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:28:17 +0000] \"GET / HTTP/1.1\" 200 5250 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:28:17 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:28:17 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:29:34 +0000] "GET / HTTP/1.1" 200 5246 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:29:34 +0000] \"GET / HTTP/1.1\" 200 5246 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:29:34 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:29:34 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:30:45 +0000] "GET / HTTP/1.1" 200 5246 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:30:45 +0000] \"GET / HTTP/1.1\" 200 5246 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:30:45 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:30:45 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:37:05 +0000] "GET / HTTP/1.1" 200 5264 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:37:05 +0000] \"GET / HTTP/1.1\" 200 5264 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:37:05 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:37:05 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:39:15 +0000] "GET / HTTP/1.1" 200 5264 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:39:15 +0000] \"GET / HTTP/1.1\" 200 5264 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:39:15 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:39:15 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:39:27 +0000] "GET / HTTP/1.1" 200 5264 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:39:27 +0000] \"GET / HTTP/1.1\" 200 5264 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:39:27 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:39:27 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:40:50 +0000] "GET / HTTP/1.1" 200 5274 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:40:50 +0000] \"GET / HTTP/1.1\" 200 5274 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:40:50 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:40:50 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:41:01 +0000] "GET / HTTP/1.1" 200 5264 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:41:01 +0000] \"GET / HTTP/1.1\" 200 5264 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:41:01 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:41:01 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:42:07 +0000] "GET / HTTP/1.1" 200 5318 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:42:07 +0000] \"GET / HTTP/1.1\" 200 5318 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:42:07 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:42:07 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:42:29 +0000] "GET / HTTP/1.1" 200 5290 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:42:29 +0000] \"GET / HTTP/1.1\" 200 5290 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:42:29 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:42:29 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:43:39 +0000] "GET / HTTP/1.1" 200 5290 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:43:39 +0000] \"GET / HTTP/1.1\" 200 5290 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:43:39 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:43:39 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:44:22 +0000] "GET / HTTP/1.1" 200 5290 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:44:22 +0000] \"GET / HTTP/1.1\" 200 5290 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:44:22 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:44:22 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:44:41 +0000] "GET / HTTP/1.1" 200 5290 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:44:41 +0000] \"GET / HTTP/1.1\" 200 5290 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [07/Feb/2022:10:44:41 +0000] "GET /app.js HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [07/Feb/2022:10:44:41 +0000] \"GET /app.js HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\""}}
+[debug] [2022-02-13T13:39:18.621Z] ----------------------------------------------------------------------
+[debug] [2022-02-13T13:39:18.624Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2022-02-13T13:39:18.625Z] CLI Version:   10.1.4
+[debug] [2022-02-13T13:39:18.625Z] Platform:      win32
+[debug] [2022-02-13T13:39:18.625Z] Node Version:  v16.13.2
+[debug] [2022-02-13T13:39:18.626Z] Time:          Sun Feb 13 2022 15:39:18 GMT+0200 (Israel Standard Time)
+[debug] [2022-02-13T13:39:18.626Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-13T13:39:18.740Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-13T13:39:18.740Z] > authorizing via signed-in user (yuvalzohar36@gmail.com)
+[debug] [2022-02-13T13:39:18.741Z] [iam] checking project studioup-d4e79 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-02-13T13:39:18.742Z] > refreshing access token with scopes: []
+[debug] [2022-02-13T13:39:18.743Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-13T13:39:19.090Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 13 Feb 2022 13:39:20 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-13T13:39:19.121Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions [none]
+[debug] [2022-02-13T13:39:19.121Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-13T13:39:19.544Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions 200
+[debug] [2022-02-13T13:39:19.544Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-13T13:39:19.546Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 [none]
+[debug] [2022-02-13T13:39:20.006Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 200
+[debug] [2022-02-13T13:39:20.007Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 {"projectId":"studioup-d4e79","projectNumber":"916759180544","displayName":"StudioUp","name":"projects/studioup-d4e79","resources":{"hostingSite":"studioup-d4e79","realtimeDatabaseInstance":"studioup-d4e79-default-rtdb","storageBucket":"studioup-d4e79.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'studioup-d4e79'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-02-13T13:39:20.014Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-13T13:39:20.014Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-13T13:39:20.305Z] <<< HTTP RESPONSE 200 {"date":"Sun, 13 Feb 2022 13:39:21 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-13T13:39:20.328Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/studioup-d4e79/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-02-13T13:39:21.859Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 13 Feb 2022 13:39:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[studioup-d4e79]: beginning deploy... 
+[debug] [2022-02-13T13:39:22.176Z] Error: EPERM: operation not permitted, scandir 'C:/Users/yuval/Desktop/architecture/firebase-debug.log'
+    at Object.readdirSync (node:fs:1390:3)
+    at GlobSync._readdir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:286:41)
+    at GlobSync._readdirInGlobStar (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:243:17)
+    at GlobSync._readdir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:274:17)
+    at GlobSync._processReaddir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:135:22)
+    at GlobSync._process (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:378:10)
+    at GlobSync._process (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:128:10)
+    at new GlobSync (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:46:10)
+    at globSync (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:24:10)
+    at listFiles (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:28)
+    at runDeploys (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:42:49)
+    at deploy (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:73:12)
+    at _chain (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:24:40)
+    at C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:69:16
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-02-13T13:39:37.876Z] ----------------------------------------------------------------------
+[debug] [2022-02-13T13:39:37.878Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2022-02-13T13:39:37.879Z] CLI Version:   10.1.4
+[debug] [2022-02-13T13:39:37.879Z] Platform:      win32
+[debug] [2022-02-13T13:39:37.879Z] Node Version:  v16.13.2
+[debug] [2022-02-13T13:39:37.880Z] Time:          Sun Feb 13 2022 15:39:37 GMT+0200 (Israel Standard Time)
+[debug] [2022-02-13T13:39:37.880Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-13T13:39:37.970Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-13T13:39:37.971Z] > authorizing via signed-in user (yuvalzohar36@gmail.com)
+[debug] [2022-02-13T13:39:37.971Z] [iam] checking project studioup-d4e79 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-02-13T13:39:37.973Z] > refreshing access token with scopes: []
+[debug] [2022-02-13T13:39:37.975Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-13T13:39:38.309Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Sun, 13 Feb 2022 13:39:39 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-13T13:39:38.331Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions [none]
+[debug] [2022-02-13T13:39:38.331Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-13T13:39:39.221Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions 200
+[debug] [2022-02-13T13:39:39.222Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-13T13:39:39.224Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 [none]
+[debug] [2022-02-13T13:39:39.697Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 200
+[debug] [2022-02-13T13:39:39.698Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 {"projectId":"studioup-d4e79","projectNumber":"916759180544","displayName":"StudioUp","name":"projects/studioup-d4e79","resources":{"hostingSite":"studioup-d4e79","realtimeDatabaseInstance":"studioup-d4e79-default-rtdb","storageBucket":"studioup-d4e79.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'studioup-d4e79'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-02-13T13:39:39.705Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-13T13:39:39.705Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-13T13:39:40.011Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Sun, 13 Feb 2022 13:39:41 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-13T13:39:40.039Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/studioup-d4e79/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-02-13T13:39:41.434Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 13 Feb 2022 13:39:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[studioup-d4e79]: beginning deploy... 
+[debug] [2022-02-13T13:39:41.727Z] Error: EPERM: operation not permitted, scandir 'C:/Users/yuval/Desktop/architecture/firebase-debug.log'
+    at Object.readdirSync (node:fs:1390:3)
+    at GlobSync._readdir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:286:41)
+    at GlobSync._readdirInGlobStar (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:243:17)
+    at GlobSync._readdir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:274:17)
+    at GlobSync._processReaddir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:135:22)
+    at GlobSync._process (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:378:10)
+    at GlobSync._process (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:128:10)
+    at new GlobSync (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:46:10)
+    at globSync (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:24:10)
+    at listFiles (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:28)
+    at runDeploys (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:42:49)
+    at deploy (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:73:12)
+    at _chain (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:24:40)
+    at C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:69:16
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-02-15T10:59:59.664Z] ----------------------------------------------------------------------
+[debug] [2022-02-15T10:59:59.666Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2022-02-15T10:59:59.667Z] CLI Version:   10.1.4
+[debug] [2022-02-15T10:59:59.667Z] Platform:      win32
+[debug] [2022-02-15T10:59:59.667Z] Node Version:  v16.13.2
+[debug] [2022-02-15T10:59:59.668Z] Time:          Tue Feb 15 2022 12:59:59 GMT+0200 (Israel Standard Time)
+[debug] [2022-02-15T10:59:59.668Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-15T10:59:59.748Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-15T10:59:59.748Z] > authorizing via signed-in user (yuvalzohar36@gmail.com)
+[debug] [2022-02-15T10:59:59.748Z] [iam] checking project studioup-d4e79 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-02-15T10:59:59.751Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions [none]
+[debug] [2022-02-15T10:59:59.751Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-15T11:00:00.636Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions 200
+[debug] [2022-02-15T11:00:00.637Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-15T11:00:00.638Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 [none]
+[debug] [2022-02-15T11:00:01.060Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 200
+[debug] [2022-02-15T11:00:01.061Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 {"projectId":"studioup-d4e79","projectNumber":"916759180544","displayName":"StudioUp","name":"projects/studioup-d4e79","resources":{"hostingSite":"studioup-d4e79","realtimeDatabaseInstance":"studioup-d4e79-default-rtdb","storageBucket":"studioup-d4e79.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'studioup-d4e79'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-02-15T11:00:01.068Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-15T11:00:01.068Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-15T11:00:01.340Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 15 Feb 2022 11:00:01 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-15T11:00:01.357Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/studioup-d4e79/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-02-15T11:00:02.932Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 15 Feb 2022 11:00:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[studioup-d4e79]: beginning deploy... 
+[debug] [2022-02-15T11:00:03.204Z] Error: EPERM: operation not permitted, scandir 'C:/Users/yuval/Desktop/architecture/firebase-debug.log'
+    at Object.readdirSync (node:fs:1390:3)
+    at GlobSync._readdir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:286:41)
+    at GlobSync._readdirInGlobStar (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:243:17)
+    at GlobSync._readdir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:274:17)
+    at GlobSync._processReaddir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:135:22)
+    at GlobSync._process (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:378:10)
+    at GlobSync._process (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:128:10)
+    at new GlobSync (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:46:10)
+    at globSync (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:24:10)
+    at listFiles (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:28)
+    at runDeploys (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:42:49)
+    at deploy (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:73:12)
+    at _chain (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:24:40)
+    at C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:69:16
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-02-16T08:48:14.007Z] ----------------------------------------------------------------------
+[debug] [2022-02-16T08:48:14.010Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2022-02-16T08:48:14.010Z] CLI Version:   10.1.4
+[debug] [2022-02-16T08:48:14.010Z] Platform:      win32
+[debug] [2022-02-16T08:48:14.010Z] Node Version:  v16.13.2
+[debug] [2022-02-16T08:48:14.011Z] Time:          Wed Feb 16 2022 10:48:14 GMT+0200 (Israel Standard Time)
+[debug] [2022-02-16T08:48:14.011Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-16T08:48:14.107Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-16T08:48:14.108Z] > authorizing via signed-in user (yuvalzohar36@gmail.com)
+[debug] [2022-02-16T08:48:14.108Z] [iam] checking project studioup-d4e79 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-02-16T08:48:14.110Z] > refreshing access token with scopes: []
+[debug] [2022-02-16T08:48:14.111Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-16T08:48:14.418Z] <<< HTTP RESPONSE 200 {"date":"Wed, 16 Feb 2022 08:48:15 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-16T08:48:14.435Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions [none]
+[debug] [2022-02-16T08:48:14.436Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-16T08:48:15.375Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions 200
+[debug] [2022-02-16T08:48:15.376Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-16T08:48:15.378Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 [none]
+[debug] [2022-02-16T08:48:15.801Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 200
+[debug] [2022-02-16T08:48:15.802Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 {"projectId":"studioup-d4e79","projectNumber":"916759180544","displayName":"StudioUp","name":"projects/studioup-d4e79","resources":{"hostingSite":"studioup-d4e79","realtimeDatabaseInstance":"studioup-d4e79-default-rtdb","storageBucket":"studioup-d4e79.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'studioup-d4e79'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-02-16T08:48:15.808Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-16T08:48:15.808Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-16T08:48:16.075Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Wed, 16 Feb 2022 08:48:16 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-16T08:48:16.091Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/studioup-d4e79/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-02-16T08:48:17.675Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 16 Feb 2022 08:48:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[studioup-d4e79]: beginning deploy... 
+[debug] [2022-02-16T08:48:17.998Z] Error: EPERM: operation not permitted, scandir 'C:/Users/yuval/Desktop/architecture/firebase-debug.log'
+    at Object.readdirSync (node:fs:1390:3)
+    at GlobSync._readdir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:286:41)
+    at GlobSync._readdirInGlobStar (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:243:17)
+    at GlobSync._readdir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:274:17)
+    at GlobSync._processReaddir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:135:22)
+    at GlobSync._process (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:378:10)
+    at GlobSync._process (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:128:10)
+    at new GlobSync (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:46:10)
+    at globSync (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:24:10)
+    at listFiles (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:28)
+    at runDeploys (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:42:49)
+    at deploy (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:73:12)
+    at _chain (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:24:40)
+    at C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:69:16
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-02-16T11:08:46.759Z] ----------------------------------------------------------------------
+[debug] [2022-02-16T11:08:46.762Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2022-02-16T11:08:46.763Z] CLI Version:   10.1.4
+[debug] [2022-02-16T11:08:46.763Z] Platform:      win32
+[debug] [2022-02-16T11:08:46.763Z] Node Version:  v16.13.2
+[debug] [2022-02-16T11:08:46.764Z] Time:          Wed Feb 16 2022 13:08:46 GMT+0200 (Israel Standard Time)
+[debug] [2022-02-16T11:08:46.764Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-16T11:08:46.883Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-16T11:08:46.885Z] > authorizing via signed-in user (yuvalzohar36@gmail.com)
+[debug] [2022-02-16T11:08:46.886Z] [iam] checking project studioup-d4e79 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-02-16T11:08:46.889Z] > refreshing access token with scopes: []
+[debug] [2022-02-16T11:08:46.897Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-16T11:08:47.211Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Wed, 16 Feb 2022 11:08:47 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-16T11:08:47.229Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions [none]
+[debug] [2022-02-16T11:08:47.229Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-16T11:08:48.166Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions 200
+[debug] [2022-02-16T11:08:48.166Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-16T11:08:48.171Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 [none]
+[debug] [2022-02-16T11:08:48.595Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 200
+[debug] [2022-02-16T11:08:48.595Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 {"projectId":"studioup-d4e79","projectNumber":"916759180544","displayName":"StudioUp","name":"projects/studioup-d4e79","resources":{"hostingSite":"studioup-d4e79","realtimeDatabaseInstance":"studioup-d4e79-default-rtdb","storageBucket":"studioup-d4e79.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'studioup-d4e79'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-02-16T11:08:48.606Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-16T11:08:48.607Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-16T11:08:48.881Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 16 Feb 2022 11:08:49 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-16T11:08:48.909Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/studioup-d4e79/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-02-16T11:08:50.416Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 16 Feb 2022 11:08:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[studioup-d4e79]: beginning deploy... 
+[debug] [2022-02-16T11:08:50.691Z] Error: EPERM: operation not permitted, scandir 'C:/Users/yuval/Desktop/architecture/firebase-debug.log'
+    at Object.readdirSync (node:fs:1390:3)
+    at GlobSync._readdir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:286:41)
+    at GlobSync._readdirInGlobStar (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:243:17)
+    at GlobSync._readdir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:274:17)
+    at GlobSync._processReaddir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:135:22)
+    at GlobSync._process (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:378:10)
+    at GlobSync._process (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:128:10)
+    at new GlobSync (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:46:10)
+    at globSync (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:24:10)
+    at listFiles (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:28)
+    at runDeploys (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:42:49)
+    at deploy (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:73:12)
+    at _chain (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:24:40)
+    at C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:69:16
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-02-16T12:45:33.306Z] ----------------------------------------------------------------------
+[debug] [2022-02-16T12:45:33.310Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2022-02-16T12:45:33.312Z] CLI Version:   10.1.4
+[debug] [2022-02-16T12:45:33.312Z] Platform:      win32
+[debug] [2022-02-16T12:45:33.312Z] Node Version:  v16.13.2
+[debug] [2022-02-16T12:45:33.313Z] Time:          Wed Feb 16 2022 14:45:33 GMT+0200 (Israel Standard Time)
+[debug] [2022-02-16T12:45:33.313Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-16T12:45:33.420Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-16T12:45:33.422Z] > authorizing via signed-in user (yuvalzohar36@gmail.com)
+[debug] [2022-02-16T12:45:33.423Z] [iam] checking project studioup-d4e79 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-02-16T12:45:33.430Z] > refreshing access token with scopes: []
+[debug] [2022-02-16T12:45:33.431Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-16T12:45:33.731Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 16 Feb 2022 12:45:34 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-16T12:45:33.750Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions [none]
+[debug] [2022-02-16T12:45:33.750Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-16T12:45:34.132Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions 200
+[debug] [2022-02-16T12:45:34.132Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studioup-d4e79:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-16T12:45:34.133Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 [none]
+[debug] [2022-02-16T12:45:34.543Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 200
+[debug] [2022-02-16T12:45:34.543Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studioup-d4e79 {"projectId":"studioup-d4e79","projectNumber":"916759180544","displayName":"StudioUp","name":"projects/studioup-d4e79","resources":{"hostingSite":"studioup-d4e79","realtimeDatabaseInstance":"studioup-d4e79-default-rtdb","storageBucket":"studioup-d4e79.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'studioup-d4e79'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-02-16T12:45:34.550Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-16T12:45:34.550Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-16T12:45:34.807Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Wed, 16 Feb 2022 12:45:35 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-16T12:45:34.820Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/studioup-d4e79/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-02-16T12:45:36.444Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 16 Feb 2022 12:45:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[studioup-d4e79]: beginning deploy... 
+[debug] [2022-02-16T12:45:36.719Z] Error: EPERM: operation not permitted, scandir 'C:/Users/yuval/Desktop/architecture/firebase-debug.log'
+    at Object.readdirSync (node:fs:1390:3)
+    at GlobSync._readdir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:286:41)
+    at GlobSync._readdirInGlobStar (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:243:17)
+    at GlobSync._readdir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:274:17)
+    at GlobSync._processReaddir (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:135:22)
+    at GlobSync._process (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:378:10)
+    at GlobSync._process (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:128:10)
+    at new GlobSync (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:46:10)
+    at globSync (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:24:10)
+    at listFiles (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:28)
+    at runDeploys (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:42:49)
+    at deploy (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:73:12)
+    at _chain (C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:24:40)
+    at C:\Users\yuval\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:69:16
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
